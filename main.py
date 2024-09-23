@@ -24,6 +24,4 @@ email_content += "</body></html>"
 sender = "sender@gmail.com"  # Replace with your Gmail address
 to = "recipient@gmail.com"  # Replace with recipient's email address
 subject = "Today's Top News Stories"
-email_content += f"<h2>{story['keyword']}</h2>"
-email_content += f"<h3><a href='{story['link']}'>{story['title']}</a></h3>"
 send_email(sender, to, subject, email_content)
